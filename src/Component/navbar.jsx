@@ -1,6 +1,8 @@
 import React from 'react'
 import imglogo from '../assets/birthday-cake.png'
-import Contact from '../Views/Contact'  
+import Contact from '../Views/Contact' 
+import { Link } from 'react-router' 
+
 
 function Navbar() {
   return (
@@ -9,8 +11,8 @@ function Navbar() {
       <h1 className='display-static text-3xl font-semibold text-orange-600'>Cake Shop</h1>
       <nav>
         <ul className='flex space-x-4'>
-          <li><a href="/" className='text-lg'>Home</a></li>
-          <li><a href="./Contact" className='text-lg'>Contact</a></li>
+          <Link to="/" className='text-lg'>Home</Link>
+          <Link to="./Contact" className='text-lg'>Contact</Link>
         </ul>
       </nav>
     </div>
