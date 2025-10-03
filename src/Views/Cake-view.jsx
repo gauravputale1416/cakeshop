@@ -3,17 +3,18 @@ import img1 from '../assets/1.jpeg'
 import img2 from '../assets/2.webp'
 import img3 from '../assets/3.jpg'
 import img4 from '../assets/4.png'
-import { CAKEDATA } from '../configes/Cakedata.jsx;'
+import {CAKEDATA} from '../configes/Cakedata.jsx'
 
 
-const images = [
+
+function CakeView() {
+    const images = [
   img1,
   img2,
   img3,
   img4,
 ]
 
-function CakeView() {
   const [selectedImg, setSelectedImg] = useState(images[0])
 
   return (
