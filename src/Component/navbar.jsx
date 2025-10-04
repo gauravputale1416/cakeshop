@@ -14,7 +14,7 @@ function Navbar() {
       <nav>
         <ul className='flex space-x-4'>
           <Link to="/" className='text-lg'>Home</Link>
-          <Link to="./Cake-Menu" className='text-lg'>Cake Menu</Link>
+          <Link to="./Cake-Menu" className='text-lg'>Cakes</Link>
           <Link to="./Contact" className='text-lg'>Contact</Link>
         </ul>
       </nav>
