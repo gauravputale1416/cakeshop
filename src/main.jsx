@@ -17,6 +17,7 @@ root.render(
     <Route path="/contact" element={<Contact />} />
     <Route path="/Cake-Menu" element={<CakeMenu />} />
     <Route path="/Cake-view" element={<CakeView />} />
+
   </Routes>
 </BrowserRouter>
 
