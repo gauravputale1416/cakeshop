@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <div>
        <Heading heading="Welcome to the Cake Shop!" />
-      <p className='mt-1 text-lg text-center font-light'>Explore our&nbsp;
+      <p className='mt-1  text-lg text-center font-light'>Explore our&nbsp;
          <span className='inline-block rotate-10 text-red-500  font-bold bg-yellow-500 px-3 rounded-md xs:rotate-0'>Delicious</span> &nbsp;
          cakes and &nbsp;
          <span className='inline-block rotate-10 text-red-500 font-bold bg-yellow-500 px-3 rotate rounded-md xs:rotate-0' >Treats</span>&nbsp;

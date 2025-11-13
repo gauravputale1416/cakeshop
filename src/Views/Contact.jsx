@@ -3,7 +3,7 @@ import Navbar from '../Component/navbar'
 function Contact() {
   return (
     <div>
-      <Navbar />
+
       <h1 className='text-3xl font-bold text-blue-600 text-center'>Contact Us</h1>
       <p className='mt-4 text-lg text-center font-light text-gray-600'>We would love to hear from you!</p>
 

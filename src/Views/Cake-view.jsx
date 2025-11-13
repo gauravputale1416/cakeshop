@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router'
 import img1 from '../assets/1.jpeg'
 import img2 from '../assets/2.webp'
 import img3 from '../assets/3.jpg'
@@ -16,9 +17,10 @@ function CakeView() {
 ]
 
   const [selectedImg, setSelectedImg] = useState(images[0])
+  const navigate = useNavigate()
 
   return (
-    <div className="flex flex-col items-center ">
+    <div className="flex flex-col items-center justify-between min-h-screen">
       <h1 className="text-3xl font-bold mb-6">Cake View</h1>
       <div className="flex flex-col items-center">
         {/* Big Image */}
@@ -38,6 +40,13 @@ function CakeView() {
           ))}
         </div>
       </div>
+      {/* Bottom Button */}
+      <button
+        onClick={() => navigate('/cake-menu')}
+        className="mb-8 px-8 py-3 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-lg shadow-lg transition"
+      >
+        Go to Menu
+      </button>
     </div>
   )
 }

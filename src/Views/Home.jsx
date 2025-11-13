@@ -10,7 +10,7 @@ import Footer from '../Component/Footer.jsx'
 function Home() {
   return (
     <div>
-      <Navbar />
+ 
       <HeroSection />
       <FeaturesCarts />
      

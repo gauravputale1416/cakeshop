@@ -34,7 +34,7 @@ function CakeMenu() {
 
     return (
         <div className="relative min-h-screen bg-gradient-to-br from-pink-100 via-yellow-50 to-purple-100 pb-20">
-            <Navbar />
+      
             <h1 className='text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 text-center mt-10 drop-shadow-lg tracking-wide'>Our Cake Menu</h1>
             <p className='mt-4 text-lg text-center font-light text-gray-700 display:flex flex-wrap justify-center'>Explore our delicious cake offerings!</p>
             <div className='container mx-auto px-4 flex flex-row flex-wrap justify-center z-10 relative'>
