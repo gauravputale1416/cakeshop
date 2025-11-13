@@ -5,7 +5,7 @@ import img2 from '../assets/2.webp'
 import img3 from '../assets/3.jpg'
 import img4 from '../assets/4.png'
 import {CAKEDATA} from '../configes/Cakedata.jsx'
-
+import Footer from '../Component/Footer.jsx'
 
 
 function CakeView() {
@@ -20,7 +20,8 @@ function CakeView() {
   const navigate = useNavigate()
 
   return (
-    <div className="flex flex-col items-center justify-between min-h-screen">
+    // added bottom padding to avoid content being hidden by the fixed footer
+    <div className="flex flex-col items-center justify-between min-h-screen pb-24">
       <h1 className="text-3xl font-bold mb-6">Cake View</h1>
       <div className="flex flex-col items-center">
         {/* Big Image */}
@@ -43,10 +44,11 @@ function CakeView() {
       {/* Bottom Button */}
       <button
         onClick={() => navigate('/cake-menu')}
-        className="mb-8 px-8 py-3 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-lg shadow-lg transition"
+        className="mb-19 my-10 px-8 py-3 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-lg shadow-lg transition"
       >
         Go to Menu
       </button>
+      <Footer />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
-
+import Footer from '../Component/Footer'
 function Contact() {
   const navigate = useNavigate()
 
@@ -63,6 +63,7 @@ function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
 
     </div>
     
