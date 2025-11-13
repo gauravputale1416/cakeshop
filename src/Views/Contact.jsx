@@ -1,6 +1,15 @@
 import React from 'react'
-import Navbar from '../Component/navbar'
+import { useNavigate } from 'react-router-dom'
+
 function Contact() {
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // Navigate to home page after form submission
+    navigate('/')
+  }
+
   return (
     <div>
 
@@ -9,18 +18,18 @@ function Contact() {
 
 
       <div>
-        <form className='max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md'>
+        <form className='max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md' onSubmit={handleSubmit}>
           <div className='mb-4'>
             <label className='block text-gray-700 font-bold mb-2' htmlFor='name'>Name</label>
-            <input className='border border-gray-300 p-2 w-full rounded-lg' type='text' id='name' placeholder='Your Name' />  
+            <input className='border border-gray-300 p-2 w-full rounded-lg' type='text' id='name' placeholder='Your Name' required />  
           </div>
           <div className='mb-4'>
             <label className='block text-gray-700 font-bold mb-2' htmlFor='email'>Email</label>
-            <input className='border border-gray-300 p-2 w-full rounded-lg' type='email' id='email' placeholder='Your Email' />
+            <input className='border border-gray-300 p-2 w-full rounded-lg' type='email' id='email' placeholder='Your Email' required />
           </div>
           <div className='mb-4'>
             <label className='block text-gray-700 font-bold mb-2' htmlFor='message'>Message</label>
-            <textarea className='border border-gray-300 p-2 w-full rounded-lg' id='message' rows='4' placeholder='Your Message'></textarea>
+            <textarea className='border border-gray-300 p-2 w-full rounded-lg' id='message' rows='4' placeholder='Your Message' required></textarea>
           </div>
           <div className='flex justify-center'>
             <button className='bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300' type='submit'>Submit</button>
